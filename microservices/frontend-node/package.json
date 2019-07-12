@@ -1,0 +1,14 @@
+{
+    "name": "node_express_app",
+    "version": "1.0.0",
+    "description": "Node.js Express Application",
+    "author": "Ali Kahoot <kahoot.ali@outlook.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "request": "2.88.0"
+    }
+  }
