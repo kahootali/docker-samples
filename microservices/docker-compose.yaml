@@ -16,8 +16,6 @@ services:
     - application
     ports:
     - "9091:8080"    
-    links:
-    - backend
     depends_on:
     - backend
 networks:
