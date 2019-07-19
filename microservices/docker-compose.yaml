@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  backend:
+    build: 
+      context: backend-python/
+      dockerfile: Dockerfile
+    init: true
+    networks:
+    - application
+    ports:
+    - "9090:8080"        
+  frontend:
+    image: frontend-app
+    init: true
+    networks:
+    - application
+    ports:
+    - "9091:8080"    
+    links:
+    - backend
+    depends_on:
+    - backend
+networks:
+  application:
+    name: application
