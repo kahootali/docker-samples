@@ -3,8 +3,8 @@ app = Flask(__name__)
 
 instructors = [
     { 'firstName': "Muhammad Ali", 'lastName': "Kahoot"  },
-    { 'firstName': "Umer", 'lastName': "Munir"  },
-    { 'firstName': "Muhammad", 'lastName': "Hammad"  }
+    { 'firstName': "Irtiza", 'lastName': "Ali"  },
+    { 'firstName': "Usama", 'lastName': "Ahmad"  }
 ]
 
 @app.route('/hello')
