@@ -8,7 +8,7 @@ WORKDIR /app
 
 EXPOSE 8080 
 
-ADD main.go .
+COPY main.go .
  
 RUN go build
  

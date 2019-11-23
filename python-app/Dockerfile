@@ -11,6 +11,6 @@ EXPOSE 8080
 
 RUN pip install flask
 
-ADD app.py ./
+COPY app.py ./
 
 CMD [ "python", "./app.py" ]
