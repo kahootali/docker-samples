@@ -7,15 +7,15 @@ services:
     init: true
     networks:
     - application
-    ports:
-    - "9090:8080"        
   frontend:
-    image: frontend-app
+    build: 
+      context: frontend-node/
+      dockerfile: Dockerfile
     init: true
     networks:
     - application
     ports:
-    - "9091:8080"    
+    - "9091-9095:8080"
     depends_on:
     - backend
 networks:
