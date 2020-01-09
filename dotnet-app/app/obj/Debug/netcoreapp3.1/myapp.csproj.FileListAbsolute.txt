@@ -1,0 +1,11 @@
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp.deps.json
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp.runtimeconfig.json
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp.runtimeconfig.dev.json
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp.dll
+/home/kahoot/Desktop/tmp/app/bin/Debug/netcoreapp3.1/myapp.pdb
+/home/kahoot/Desktop/tmp/app/obj/Debug/netcoreapp3.1/myapp.csprojAssemblyReference.cache
+/home/kahoot/Desktop/tmp/app/obj/Debug/netcoreapp3.1/myapp.AssemblyInfoInputs.cache
+/home/kahoot/Desktop/tmp/app/obj/Debug/netcoreapp3.1/myapp.AssemblyInfo.cs
+/home/kahoot/Desktop/tmp/app/obj/Debug/netcoreapp3.1/myapp.dll
+/home/kahoot/Desktop/tmp/app/obj/Debug/netcoreapp3.1/myapp.pdb

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/kahoot/.dotnet/store/|arch|/|tfm|",
+      "/home/kahoot/.nuget/packages"
+    ]
+  }
+}

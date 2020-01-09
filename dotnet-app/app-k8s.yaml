@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dotnet-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dotnet-app
+    spec:
+      containers:
+      - name: dotnet-app
+        image: kahootali/dotnet-app
+
