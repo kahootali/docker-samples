@@ -27,5 +27,24 @@ app.get('/instructor/:id', (req, res) => {
 
 });
 
+app.get('/student/:id', (req, res) => {
+  id = Number(req.params.id)
+  let name = ""
+  request(String(`http://localhost:9090/student/${id}`), function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var obj = JSON.parse(body);
+      if (id == 5) {
+        name = "Hello "+obj.firstName + " " + obj.lastName + ", You need to improve on your skills"
+      } else {
+        name = "Hello "+obj.firstName + " " + obj.lastName + ", You are going to become a great DevOps Engineer"
+        
+      }
+      
+      res.send(name);
+    }
+  })
+
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
