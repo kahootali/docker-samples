@@ -1,15 +1,23 @@
-FROM golang:alpine
+FROM golang:alpine as build
+
+WORKDIR /app
+
+COPY main.go ./
+ 
+RUN go env -w GO111MODULE=auto 
+
+RUN go build main.go
+
+FROM alpine
 
 LABEL name="Golang Application" \    
       maintainer="Ali Kahoot <kahoot.ali@outlook.com>" \
       summary="A Golang Sample application"  
 
-WORKDIR /app
-
 EXPOSE 8080 
 
-COPY main.go .
+WORKDIR /app
+
+COPY --from=build ./app/main ./
  
-RUN go build
- 
-CMD ["./app"]
+CMD ["./app/main"]
