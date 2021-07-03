@@ -6,7 +6,7 @@ FROM ubuntu
 # CMD ["Hello, How are you? Students of Batch # 6"]
 
 # ENTRYPOINT ["/bin/echo", "Hello, How are you? Students of Batch # 6"]
-# CMD [""]
+# CMD ["We are fine"]
 
 # ENTRYPOINT [""]
 # CMD ["/bin/echo", "Hello, How are you? Students of Batch # 6"]
