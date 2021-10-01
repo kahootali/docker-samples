@@ -1,14 +1,18 @@
 version: '3'
 services:
-  web:
+  nginx:
     image: nginx
     ports:
     - "8080:80"
     volumes:
     - nginx_html:/usr/share/nginx/html/
-    links:
-    - redis
-  redis:
-    image: redis
+    networks: 
+      - appnet
+  centos:
+    image: centos
+    networks: 
+      - appnet
 volumes:
   nginx_html: {}
+networks:
+  appnet: 

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  centos1:
+    image: centos
+    entrypoint: "sleep"
+    command: "36000"
+  centos2:
+    image: centos
+    entrypoint: "sleep"
+    command: "36000"
