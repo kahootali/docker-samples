@@ -10,8 +10,12 @@ services:
       - appnet
   centos:
     image: centos
+    entrypoint: "sleep"
+    command: "36000"
+    depends_on:
+    - nginx
     networks: 
-      - appnet
+    - appnet
 volumes:
   nginx_html: {}
 networks:
