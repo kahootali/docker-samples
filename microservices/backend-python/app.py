@@ -3,14 +3,16 @@ app = Flask(__name__)
 
 instructors = [
     { 'firstName': "Muhammad Ali", 'lastName': "Kahoot"  },
-    { 'firstName': "Ali", 'lastName': "Arslan"  }
+    { 'firstName': "Muhammad", 'lastName': "Sannan"  }
 ]
 students = [
-    { 'id': "1", 'firstName': "Khizer", 'lastName': "Rehan"  },
-    { 'id': "2",'firstName': "Bilal", 'lastName': "Maqsood"  },
-    { 'id': "3",'firstName': "Ayaz", 'lastName': "UlHaq"  },
-    { 'id': "4",'firstName': "Haider", 'lastName': "Rizvi"  },
-    { 'id': "5",'firstName': "Test", 'lastName': "User"  }
+    { 'id': "1", 'firstName': "Bilal", 'lastName': "Haider"  },
+    { 'id': "2",'firstName': "Mahmood", 'lastName': "Sultan"  },
+    { 'id': "3",'firstName': "Yasir", 'lastName': "Ali"  },
+    { 'id': "4",'firstName': "Haroon", 'lastName': "Khan"  },
+    { 'id': "5",'firstName': "Test", 'lastName': "User"  },
+    { 'id': "6",'firstName': "Ahsan", 'lastName': "Khan"  },
+    { 'id': "7",'firstName': "Asim", 'lastName': "Iqbal"  }
 ]
 
 @app.route('/hello')
