@@ -4,7 +4,27 @@ services:
     image: centos
     entrypoint: "sleep"
     command: "36000"
+    networks:
+    - app1
   centos2:
     image: centos
     entrypoint: "sleep"
     command: "36000"
+    networks:
+    - app1
+  centos3:
+    image: centos
+    entrypoint: "sleep"
+    command: "36000"
+    networks:
+    - app2
+  centos4:
+    image: centos
+    entrypoint: "sleep"
+    command: "36000"
+    networks:
+    - app2
+networks:
+  app1: {}
+  app2: {}
+ 
