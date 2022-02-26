@@ -1,6 +1,3 @@
-FROM centos:latest
-RUN yum update -y
-RUN yum install -y httpd
-ADD ./index.html /var/www/html
-ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+FROM httpd
+ADD ./index.html /usr/local/apache2/htdocs/
 EXPOSE 80
