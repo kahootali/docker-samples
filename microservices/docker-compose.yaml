@@ -14,12 +14,14 @@ services:
       context: frontend-node/
       dockerfile: Dockerfile
     init: true
+    environment:
+      BACKEND_URL: backend:8080
     deploy:
-      replicas: 2
+      replicas: 1
     networks:
     - application
     ports:
-    - "9091-9095:8080"
+    - "9091:8080"
     depends_on:
     - backend
 networks:
