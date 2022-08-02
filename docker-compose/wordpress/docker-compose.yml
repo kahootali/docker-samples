@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     volumes:
     - db_data:/var/lib/mysql
     restart: always
@@ -12,7 +12,7 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-  wordpress:
+  frontend:
     depends_on:
     - db
     image: wordpress:latest
