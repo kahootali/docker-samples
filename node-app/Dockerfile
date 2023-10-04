@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:20.8.0-alpine3.18
 
 LABEL name="Node Application" \   
      maintainer="Ali Kahoot <kahoot.ali@outlook.com>" \
