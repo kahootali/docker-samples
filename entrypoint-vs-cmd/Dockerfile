@@ -1,15 +1,19 @@
 FROM ubuntu
-# Hello, How are you? Students of Batch # 7
+# Our container should print 
+# Hello, How are you? Students of Section A or B
 
-
+# 1st option
 # ENTRYPOINT ["/bin/echo"]
-# CMD ["Hello, How are you? Students of Batch # 7"]
+# CMD ["Hello, How are you? Students of Section A or B"]
 
-# ENTRYPOINT ["/bin/echo", "Hello, How are you? Students of Batch # 7"]
-# CMD ["We are fine"]
+# 2nd option
+# ENTRYPOINT ["/bin/echo", "Hello, How are you? Students of Section A or B"]
+# CMD [""]
 
+# 3rd Option
 # ENTRYPOINT [""]
-# CMD ["/bin/echo", "Hello, How are you? Students of Batch # 7"]
+# CMD ["/bin/echo", "Hello, How are you? Students of Section A or B"]
 
-# ENTRYPOINT ["/bin/echo", "Hello, How are you? Students of Batch #"]
-# CMD ["7"]
+# 4th options
+# ENTRYPOINT ["/bin/echo", "Hello, How are you? Students of Section"]
+# CMD ["A or B"]
