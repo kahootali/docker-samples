@@ -4,5 +4,7 @@ services:
     build: .
     ports:
     - "8080:80"
-  redis:
-    image: "redis:alpine"
+  ubuntu:
+    image: "ubuntu-curl"
+    entrypoint: "sleep"
+    command: "36000"

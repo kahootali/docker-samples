@@ -5,7 +5,7 @@ services:
     entrypoint: "sleep"
     command: "36000"
     environment:
-    - NAME=test
+    - NAME=prod
     env_file:
     - .env
     - .env.prod

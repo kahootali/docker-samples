@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ubuntu:
+    image: ubuntu
+    entrypoint: "sleep"
+    command: "36000"
+    environment:
+    - NAME=test
+    env_file:
+    - .env
+    - .env.dev
