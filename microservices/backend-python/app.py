@@ -2,16 +2,13 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 instructors = [
-    { 'firstName': "Muhammad Ali", 'lastName': "Kahoot"  }
+    { 'id': "1",'firstName': "Muhammad Ali", 'lastName': "Kahoot" }
 ]
 students = [
-    { 'id': "1", 'firstName': "Hassan", 'lastName': "Sheikh"  },
-    { 'id': "2",'firstName': "Kazim", 'lastName': "Ali"  },
-    { 'id': "3",'firstName': "Adeel", 'lastName': "Ahmed"  },
-    { 'id': "4",'firstName': "Adeel", 'lastName': "Raza"  },
-    { 'id': "5",'firstName': "Test", 'lastName': "User"  },
-    { 'id': "6",'firstName': "Ali", 'lastName': "Ahmed"  },
-    { 'id': "7",'firstName': "Hamad", 'lastName': "Khan"  }
+    { 'id': "1", 'firstName': "", 'lastName': ""  },
+    { 'id': "2",'firstName': "", 'lastName': ""  },
+    { 'id': "3",'firstName': "", 'lastName': ""  },
+    { 'id': "4",'firstName': "", 'lastName': ""  }
 ]
 
 @app.route('/hello')
